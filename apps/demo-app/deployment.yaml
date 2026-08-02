@@ -17,13 +17,13 @@ spec:
     spec:
       containers:
       - name: demo-app
-        image: demo-app:v1.3.0
+        image: demo-app:v1.2.0
         imagePullPolicy: IfNotPresent
         ports:
         - containerPort: 8080
         env:
         - name: APP_VERSION
-          value: "v1.3.0"
+          value: "v1.2.0"
         readinessProbe:
           httpGet:
             path: /health
